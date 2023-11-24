@@ -36,3 +36,9 @@
 		USE TestDatabase;
 		ALTER TABLE [dbo].[PersonTable]
 			DROP COLUMN DateOfBirth;
+
+	-- 6. CREATE INDEX:
+		-- CREATE INDEX IndexName ON TableName(ColumnName1, ColumnName2, ...);
+		USE TestDatabase;
+		CREATE INDEX PersonFullName
+			ON [dbo].[Persontable](FristName,LastName);
