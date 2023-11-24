@@ -2,3 +2,7 @@
 	-- 1. CREATE DATABASE:
 		-- CREATE DATABASE DatabaseName;
 			CREATE DATABASE TestDatabase;
+
+	-- 2. DROP DATABASE:
+		-- DROP DATABASE DatabaseName;
+			DROP DATABASE TestDatabase;
