@@ -15,3 +15,8 @@
 			FristName VARCHAR(30) NOT NULL,
 			LastName VARCHAR(30) NOT NULL
 		);
+
+	-- 4. DROP TABLE:
+		-- DROP TABLE TableName;
+		USE TestDatabase;
+		DROP TABLE PersonTable;
