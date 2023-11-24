@@ -22,7 +22,12 @@
 		DROP TABLE PersonTable;
 
 	-- 5. ALTER TABLE:
-		-- ALTER TABLE TableName ADD/MDIFY/DROP ColumName;
+		-- ALTER TABLE TableName ADD ColumName;
 		USE TestDatabase;
 		ALTER TABLE [dbo].[PersonTable]
 			ADD DateOfBirth DATETIME NOT NULL;
+
+		-- ALTER TABLE TableName MODIFY COLUMN ColumName;
+		USE TestDatabase;
+		ALTER TABLE [dbo].[PersonTable]
+			ALTER COLUMN DateOfBirth DATE NOT NULL;
