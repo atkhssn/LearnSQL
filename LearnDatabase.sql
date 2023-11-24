@@ -27,7 +27,12 @@
 		ALTER TABLE [dbo].[PersonTable]
 			ADD DateOfBirth DATETIME NOT NULL;
 
-		-- ALTER TABLE TableName MODIFY COLUMN ColumName;
+		-- ALTER TABLE TableName ALTER COLUMN ColumName;
 		USE TestDatabase;
 		ALTER TABLE [dbo].[PersonTable]
 			ALTER COLUMN DateOfBirth DATE NOT NULL;
+
+		-- ALTER TABLE TableName ALTER DROP ColumName;
+		USE TestDatabase;
+		ALTER TABLE [dbo].[PersonTable]
+			DROP COLUMN DateOfBirth;
