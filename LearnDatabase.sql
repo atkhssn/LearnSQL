@@ -20,3 +20,9 @@
 		-- DROP TABLE TableName;
 		USE TestDatabase;
 		DROP TABLE PersonTable;
+
+	-- 5. ALTER TABLE:
+		-- ALTER TABLE TableName ADD/MDIFY/DROP ColumName;
+		USE TestDatabase;
+		ALTER TABLE [dbo].[PersonTable]
+			ADD DateOfBirth DATETIME NOT NULL;
